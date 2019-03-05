@@ -1,4 +1,4 @@
-.main2{
+.label{
     /* 给背景框大小颜色 */
     width: 1000px;
     height: 170px;
@@ -7,7 +7,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.line1>ul{
+.line-first>ul{
     /* 设置ul宽度 40px */
     list-style: none;
     overflow: hidden;
@@ -15,20 +15,20 @@
     position: absolute;
     top: 5px;
 }
-.line1>ul>li{
+.line-first>ul>li{
     /* li 浮动 */
     float: left;
     display: block;
     margin: 0 5px;
     text-align: center;
 }
-.line1>ul>li>p{
+.line-first>ul>li>p{
     /* p标签变色 */
     color: rgb(71, 198, 195);
     font-size: 16px;
     margin: 0 10px;
 }
-.line1>ul>li>button{
+.line-first>ul>li>button{
     /* button标签设置宽度、颜色、字体大小 */
     width: 76px;
     background: rgb(235,235,235) center center;
@@ -37,17 +37,18 @@
     font-size: 16px;
     color:rgb(81, 81, 81);
 }
-.line1>ul>li>button:hover{
+.line-first>ul>li>button:hover{
     cursor: pointer;
 }
-.line1>ul>li>button:focus{
+.line-first>ul>li>button:focus{
     /* 点击时改变颜色与边框 */
     box-sizing: border-box;
     outline: none;
     border: 2px solid rgb(252, 186, 86);
     background: #ffffff;
 }
-.line2>ul{
+
+.line-second>ul{
     /* 设置ul宽度 40px */
     list-style: none;
     overflow: hidden;
@@ -55,20 +56,20 @@
     position: absolute;
     top: 45px;
 }
-.line2>ul>li{
+.line-second>ul>li{
     /* li 浮动 */
     float: left;
     display: block;
     margin: 0 5px;
     text-align: center;
 }
-.line2>ul>li>p{
+.line-second>ul>li>p{
     /* p标签变色 */
     color: rgb(71, 198, 195);
     font-size: 16px;
     margin: 0 10px;
 }
-.line2>ul>li>button{
+.line-second>ul>li>button{
     /* button标签设置宽度、颜色、字体大小 */
     width: 76px;
     background: rgb(235,235,235) center center;
@@ -77,17 +78,18 @@
     font-size: 16px;
     color:rgb(81, 81, 81);
 }
-.line2>ul>li>button:hover{
+.line-second>ul>li>button:hover{
     cursor: pointer;
 }
-.line2>ul>li>button:focus{
+.line-second>ul>li>button:focus{
     /* 点击时改变颜色与边框 */
     box-sizing: border-box;
     outline: none;
     border: 2px solid rgb(252, 186, 86);
     background: #ffffff;
 }
-.line3>ul{
+
+.line-third>ul{
     /* 设置ul宽度 40px */
     list-style: none;
     overflow: hidden;
@@ -95,20 +97,20 @@
     position: absolute;
     top: 85px;
 }
-.line3>ul>li{
+.line-third>ul>li{
     /* li 浮动 */
     float: left;
     display: block;
     margin: 0 5px;
     text-align: center;
 }
-.line3>ul>li>p{
+.line-third>ul>li>p{
     /* p标签变色 */
     color: rgb(71, 198, 195);
     font-size: 16px;
     margin: 0 10px;
 }
-.line3>ul>li>button{
+.line-third>ul>li>button{
     /* button标签设置宽度、颜色、字体大小 */
     width: 76px;
     background: rgb(235,235,235) center center;
@@ -117,17 +119,18 @@
     font-size: 16px;
     color:rgb(81, 81, 81);
 }
-.line3>ul>li>button:hover{
+.line-third>ul>li>button:hover{
     cursor: pointer;
 }
-.line3>ul>li>button:focus{
+.line-third>ul>li>button:focus{
     /* 点击时改变颜色与边框 */
     box-sizing: border-box;
     outline: none;
     border: 2px solid rgb(252, 186, 86);
     background: #ffffff;
 }
-.line4>ul{
+
+.line-fourth>ul{
     /* 设置ul宽度 40px */
     list-style: none;
     overflow: hidden;
@@ -135,20 +138,20 @@
     position: absolute;
     top: 125px;
 }
-.line4>ul>li{
+.line-fourth>ul>li{
     /* li 浮动 */
     float: left;
     display: block;
     margin: 0 5px;
     text-align: center;
 }
-.line4>ul>li>p{
+.line-fourth>ul>li>p{
     /* p标签变色 */
     color: rgb(71, 198, 195);
     font-size: 16px;
     margin: 0 10px;
 }
-.line4>ul>li>button{
+.line-fourth>ul>li>button{
     /* button标签设置宽度、颜色、字体大小 */
     width: 76px;
     background: rgb(235,235,235) center center;
@@ -157,10 +160,10 @@
     font-size: 16px;
     color:rgb(81, 81, 81);
 }
-.line4>ul>li>button:hover{
+.line-fourth>ul>li>button:hover{
     cursor: pointer;
 }
-.line4>ul>li>button:focus{
+.line-fourth>ul>li>button:focus{
     /* 点击时改变颜色与边框 */
     box-sizing: border-box;
     outline: none;

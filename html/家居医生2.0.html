@@ -17,7 +17,8 @@
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 </head>
 <body>
-    <div id="test">
+    <!-- 回到顶部 -->
+    <div id="return">
         <img src="../images/upicon.png" alt="回到顶部">
     </div>
     <script>
@@ -28,6 +29,7 @@
             $("html,body").animate({scrollTop:"0"},1000);
         })
     </script>
+    <!-- 家居医生logo -->
     <div class="first"></div>
     <!-- 标题栏 -->
     <div class="head">
@@ -52,8 +54,8 @@
         </div>
     </div>
 
-    <!-- 首页... -->
-    <div class="main1">
+    <!-- 首页...导航 -->
+    <div class="navigation">
         <ul>
             <li><a href="#">首页</a></li>
             <li><img src="../images/大于号.png" alt=""></li>
@@ -64,8 +66,8 @@
     </div>
 
     <!-- 类别... -->
-    <div class="main2">
-        <div class="line1">
+    <div class="label">
+        <div class="line-first">
             <ul>
                 <li><p>类别</p></li>
                 <li><button>全部</button></li>
@@ -81,13 +83,13 @@
                 <li><img src="../images/indexSelect.png" alt=""></li> 
             </ul>
         </div>
-        <div class="line2">
+        <div class="line-second">
             <ul>
                 <li><p>类型</p></li>
                 <li><button>全部</button></li>
             </ul>
         </div>
-        <div class="line3">
+        <div class="line-third">
             <ul>
                 <li><p>材质</p></li>
                 <li><button>全部</button></li>
@@ -97,7 +99,7 @@
                 <li><button>其他</button></li>
             </ul>
         </div>
-        <div class="line4">
+        <div class="line-fourth">
             <ul>
                 <li><p>品牌</p></li>
                 <li><button>全部</button></li>
@@ -113,26 +115,24 @@
     </div>
 
     <!-- 发布时间... -->
-    <div class="main3">
-        <div class="sort1">
+    <div class="search">
+        <div class="time">
             <a href="#">发布时间</a>
             <img src="../images/downicon.png" alt="">
         </div>
-        <div class="sort2">
+        <div class="price">
             <a href="#">价格</a>
             <img src="../images/upicon.png" alt="">
         </div>
-        <div class="sort3">
+        <div class="protect">
             <a href="#">环保节能</a>
             <img src="../images/upicon.png" alt="">
         </div>
         <form>
             <input type="text">
             <button>
-                <!-- <div> -->
-                    <i class="iconfont">&#xe819;</i>
-                    搜索
-                <!-- </div> -->
+                <i class="iconfont">&#xe819;</i>
+                搜索
             </button>
         </form>
         <div class="link">
@@ -141,8 +141,8 @@
     </div>
 
     <!-- 8个框 -->
-    <div class="table1">
-        <div class="page">
+    <div class="table">
+        <div class="block">
             <img src="../images/data_image.png" alt="">
             <p>德尔 &#160 &#160 &#160 都市系列3001</p>
             <p>木地板 - 复合地板</p>
@@ -150,7 +150,7 @@
             <br>
             <h2 class="h2">环保评级：B</h2><h3 class="h3">（可以使用）</h3>
         </div>
-        <div class="page">
+        <div class="block">
             <img src="../images/data_image.png" alt="">
             <p>德尔 &#160 &#160 &#160 都市系列3001</p>
             <p>木地板 - 复合地板</p>
@@ -158,7 +158,7 @@
             <br>
             <h2>环保评级：B</h2><h3>（可以使用）</h3>
         </div>
-        <div class="page">
+        <div class="block">
             <img src="../images/data_image.png" alt="">
             <p>德尔 &#160 &#160 &#160 都市系列3001</p>
             <p>木地板 - 复合地板</p>
@@ -166,7 +166,7 @@
             <br>
             <h2>环保评级：B</h2><h3>（可以使用）</h3>
         </div>
-        <div class="page">
+        <div class="block">
             <img src="../images/data_image.png" alt="">
             <p>德尔 &#160 &#160 &#160 都市系列3001</p>
             <p>木地板 - 复合地板</p>
@@ -176,8 +176,8 @@
         </div>
     </div>
 
-    <div class="table2">
-        <div class="page">
+    <div class="table">
+        <div class="block">
             <img src="../images/data_image.png" alt="">
             <p>德尔 &#160 &#160 &#160 都市系列3001</p>
             <p>木地板 - 复合地板</p>
@@ -185,7 +185,7 @@
             <br>
             <h2>环保评级：B</h2><h3>（可以使用）</h3>
         </div>
-        <div class="page">
+        <div class="block">
             <img src="../images/data_image.png" alt="">
             <p>德尔 &#160 &#160 &#160 都市系列3001</p>
             <p>木地板 - 复合地板</p>
@@ -193,7 +193,7 @@
             <br>
             <h2>环保评级：B</h2><h3>（可以使用）</h3>
         </div>
-        <div class="page">
+        <div class="block">
             <img src="../images/data_image.png" alt="">
             <p>德尔 &#160 &#160 &#160 都市系列3001</p>
             <p>木地板 - 复合地板</p>
@@ -201,7 +201,7 @@
             <br>
             <h2>环保评级：B</h2><h3>（可以使用）</h3>
         </div>
-        <div class="page">
+        <div class="block">
             <img src="../images/data_image.png" alt="">
             <p>德尔 &#160 &#160 &#160 都市系列3001</p>
             <p>木地板 - 复合地板</p>
@@ -212,7 +212,7 @@
     </div>
 
     <!-- 下一页... -->
-    <div class="main4">
+    <div class="page">
         <div class="page-up">
             <a href="#">上一页</a>
         </div>
@@ -235,7 +235,7 @@
     </div>
 
     <!-- 二维码... -->
-    <div class="main5">
+    <div class="demand">
         <img src="../images/small_weixin.png" alt="">
         <h3><a href="#">建材检测 需求反馈</a></h3>
         <div>
@@ -245,7 +245,7 @@
     </div>
 
     <!-- 底部背景 -->
-    <div class="main6">
+    <div class="end">
         <div class="background">
             <div class="introduce">
                 <img src="../images/footerLogo.png" alt="">

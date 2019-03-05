@@ -1,4 +1,4 @@
-.main1{
+.navigation{
     /* 标题块 宽1000px居中 */
     width: 1000px;
     height: 60px;
@@ -6,7 +6,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.main1>ul{
+.navigation>ul{
     /* ul 行高40px 垂直居中 */
     list-style: none;
     overflow: hidden;
@@ -15,20 +15,20 @@
     top: 50%;
     margin-top: -20px;
 }
-.main1>ul>li{
+.navigation>ul>li{
     /* li 浮动 */
     float: left;
     display: block;
     margin-right: 10px;
     text-align: center;
 }
-.main1>ul>li>img{
+.navigation>ul>li>img{
     /* >图片水平居中 */
     position: absolute;
     top: 50%;
     margin-top: -10px;
 }
-.main1>ul>li:not(:first-child){
+.navigation>ul>li:not(:first-child){
     /* 缩进30px 避免被>覆盖 */
     text-indent: 30px;
 }

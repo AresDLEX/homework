@@ -1,4 +1,4 @@
-.main3{
+.search{
     /* 第三块背景大小颜色 */
     width: 1000px;
     height: 60px;
@@ -6,7 +6,7 @@
     margin: 20px auto;
     position: relative;
 }
-.sort1{
+.time{
     /* 第一个排序标签 */
     float: left;
     width: 80px;
@@ -15,7 +15,7 @@
     font-size: 14px;
     position: relative;
 }
-.sort1>a{
+.time>a{
     display: block;
     position: absolute;
     width: 100px;
@@ -24,7 +24,7 @@
     margin-left: -50px;
     color:rgb(81, 81, 81);
 }
-.sort1>img{
+.time>img{
     /* 排序小箭头调整位置 */
     position: absolute;
     top: 50%; left: 50%;
@@ -32,7 +32,7 @@
     margin-left: 32px;
 }
 
-.sort2{
+.price{
     /* 第二个排序标签 */
     float: left;
     width: 80px;
@@ -41,7 +41,7 @@
     font-size: 14px;
     position: relative;
 }
-.sort2>a{
+.price>a{
     display: block;
     position: absolute;
     width: 100px;
@@ -50,7 +50,7 @@
     margin-left: -50px;
     color:rgb(81, 81, 81);
 }
-.sort2>img{
+.price>img{
     /* 排序小箭头调整位置 */
     position: absolute;
     top: 50%; left: 50%;
@@ -58,7 +58,7 @@
     margin-left: 20px;
 }
 
-.sort3{
+.protect{
     /* 第一个排序标签 */
     float: left;
     width: 80px;
@@ -67,7 +67,7 @@
     font-size: 14px;
     position: relative;
 }
-.sort3>a{
+.protect>a{
     display: block;
     position: absolute;
     width: 100px;
@@ -76,7 +76,7 @@
     margin-left: -50px;
     color:rgb(81, 81, 81);
 }
-.sort3>img{
+.protect>img{
     /* 排序小箭头调整位置 */
     position: absolute;
     top: 50%; left: 50%;
@@ -84,7 +84,7 @@
     margin-left: 32px;
 }
 
-.main3>form{
+.search>form{
     /* 搜索框范围大小 设定相对坐标 */
     width: 240px;
     height: 20px;
@@ -92,7 +92,7 @@
     float: left;
     position: relative;
 }
-.main3>form>input{
+.search>form>input{
     /* 输入框大小颜色格式 */
     /* box-sizing: border-box; */
     width: 240px;
@@ -100,7 +100,7 @@
     background: white;
     border: 1px solid #eee;
 }
-.main3>form>button{
+.search>form>button{
     /* 利用绝对坐标设定按钮位置 */
     border: none;
     width: 50px;
@@ -112,10 +112,10 @@
     right: 0; top: 4px;
     color: rgb(81, 81, 81);
 }
-.main3>form>button>i{
+.search>form>button>i{
     font-size: 14px;
 }
-.main3>.link{
+.search>.link{
     float: left;
     /* 改变颜色行高，利用绝对坐标放到右边 */
     height: 30px;
@@ -125,6 +125,6 @@
     top: 50%;
     margin-top: -15px;
 }
-.main3>.link>a{
+.search>.link>a{
     color: rgb(71, 198, 195);
 }

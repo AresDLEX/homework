@@ -1,4 +1,4 @@
-.main4{
+.page{
     /* 设置背景宽高，字体大小 */
     width: 1000px;
     height: 30px;
@@ -6,7 +6,7 @@
     font-size: 14px;
 }
 /* 上一页 */
-.main4>.page-up{
+.page>.page-up{
     float: left;
     width: 120px;
     height: 30px;
@@ -14,31 +14,31 @@
     text-align: center;
     margin-right: 20px;
 }
-.main4>.page-up>a{
+.page>.page-up>a{
     line-height: 30px;
     color: rgb(81, 81, 81);
 }
-.main4>a{
+.page>a{
     /* 颜色、位置 */
     display: block;
     margin: 7px 15px;
     float: left;
     color: rgb(81, 81, 81);
 }
-.main4>a:hover{
+.page>a:hover{
     color: rgb(255, 170, 0);
     padding-bottom: 3px; 
     border-bottom: 1px solid rgb(255, 170, 0);
     /* text-decoration: underline; */
 }
-.main4>a:focus{
+.page>a:focus{
     color: rgb(255, 170, 0);
     padding-bottom: 3px; 
     border-bottom: 1px solid rgb(255, 170, 0);
     /* text-decoration: underline; */
 }
 /* 下一页 */
-.main4>.page-down{
+.page>.page-down{
     float: left;
     width: 120px;
     height: 30px;
@@ -47,29 +47,29 @@
     margin-left: 20px;
     margin-right: 50px;
 }
-.main4>.page-down>a{
+.page>.page-down>a{
     line-height: 30px;
     color: rgb(81, 81, 81);
 }
 /* 页码 */
-.main4>.page-number{
+.page>.page-number{
     float: left;
     width: 200px;
     height: 30px;
     text-align: center;
 }
-.main4>.page-number>p{
+.page>.page-number>p{
     display: inline;
     line-height: 30px;
 }
 /* 输入框与页码 */
-.main4>.page-number>input{
+.page>.page-number>input{
     box-sizing: border-box;
     width: 30px;
     height: 30px;
     border: 2px solid rgb(81, 81, 81);
 }
-.main4>.ensure{
+.page>.ensure{
     margin: 0 30px;
     width: 60px;
     height: 30px;
