@@ -68,6 +68,7 @@
     width: 30px;
     height: 30px;
     border: 2px solid rgb(81, 81, 81);
+    text-indent: 10px;
 }
 .page>.ensure{
     margin: 0 30px;
