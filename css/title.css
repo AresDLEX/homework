@@ -1,0 +1,97 @@
+*{margin: 0;padding: 0;}
+        #test{
+            width: 60px;
+            height: 40px;
+            background: rgb(235, 235, 235);
+            /* 固定定位 */
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            line-height: 40px;
+            text-align: center;
+        }
+        #test:hover{
+            cursor: pointer;
+        }
+        #test>img{
+            width: 15px;
+        }
+        a{
+            /* 去掉超链接格式 */
+            text-decoration: none;
+            color:rgb(81, 81, 81);
+        }
+        .first{
+            /* 第一行 绿色背景 logo居中 */
+            background: rgb(24,190,190) url("../images/logo.png") no-repeat center center;
+            height: 72px;
+            /* position: relative; */
+        }
+
+        .head{
+            /* 标题栏背景 灰色文本居中 */
+            height: 40px;
+            background: rgb(235,235,235);
+            text-align: center;
+        }
+        .title{
+            /* 标题块 宽1000px居中 */
+            width: 1000px;
+            height: 40px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .location{
+            /* 标题栏 定位 绝对定位居左 */
+            position: absolute;
+            top: 0; bottom: 0; left: 0;
+            font-size: 13px;
+        }
+        .location>img{
+            /* 定位图片logo 利用绝对定位垂直居中 */
+            position: absolute;
+            top:50%;
+            margin-top: -9.5px;
+        }
+        .location>a{
+            display: block;
+            width: 100px;
+            position: absolute;
+            top: 50%;
+            margin-top: -8px;
+            margin-left: 10px;
+        }
+        .admin{
+            /* 标题栏 个人中心 绝对定位居右 */
+            position: absolute;
+            top: 0; bottom: 0; right: 0;
+            line-height: 40px;
+            font-size: 12px;
+        }
+        .admin>img{
+            /* 个人中心logo 利用绝对定位垂直居中 */
+            position: absolute;
+            top:50%;
+            right: 100%;
+            margin-top: -9.5px;
+            margin-right: 5px;
+        }
+        .caption{
+            /* 标题栏中间标题 宽度400px居中 */
+            width: 400px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .caption>ul{
+            list-style: none;
+            overflow: hidden;
+            line-height: 40px;
+        }
+        .caption>ul>li{
+            /* 首页 咨询 测评 商城 */
+            /* 设置浮动，宽度100px，文本居中 */
+            float: left;
+            width: 100px;
+            text-align: center;
+        }

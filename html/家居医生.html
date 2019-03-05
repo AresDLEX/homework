@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>家居医生</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1066447_au2jbcyksma.css">
+    <style>
+        *{margin: 0;padding: 0;}
+        a{
+            /* 去掉超链接格式 */
+            text-decoration: none;
+            color:rgb(81, 81, 81);
+        }
+        .first{
+            /* 第一行 绿色背景 logo居中 */
+            background: rgb(24,190,190) url("../images/logo.png") no-repeat center center;
+            height: 72px;
+            /* position: relative; */
+        }
+
+        .head{
+            /* 标题栏背景 灰色文本居中 */
+            height: 40px;
+            background: rgb(235,235,235);
+            text-align: center;
+        }
+        .title{
+            /* 标题块 宽1000px居中 */
+            width: 1000px;
+            height: 40px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .location{
+            /* 标题栏 定位 绝对定位居左 */
+            position: absolute;
+            top: 0; bottom: 0; left: 0;
+            line-height: 40px;
+            font-size: 12px;
+        }
+        .location>img{
+            /* 定位图片logo 利用绝对定位垂直居中 */
+            position: absolute;
+            top:50%;
+            margin-top: -9.5px;
+        }
+        .location>button{
+            /* 定位button 缩进25px */
+            box-sizing: border-box;
+            background: rgb(235,235,235) center center;
+            border: rgb(235,235,235);
+            text-indent: 25px;
+            /* outline: none; */
+            color:rgb(81, 81, 81);
+        }
+        .location>button:focus{
+            box-sizing: border-box;
+            border:1px solid blue;
+            outline: none;
+        }
+        .admin{
+            /* 标题栏 个人中心 绝对定位居右 */
+            position: absolute;
+            top: 0; bottom: 0; right: 0;
+            line-height: 40px;
+            font-size: 12px;
+        }
+        .admin>img{
+            /* 个人中心logo 利用绝对定位垂直居中 */
+            position: absolute;
+            top:50%;
+            right: 100%;
+            margin-top: -9.5px;
+            margin-right: 5px;
+        }
+        .caption{
+            /* 标题栏中间标题 宽度400px居中 */
+            width: 400px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .caption>ul{
+            list-style: none;
+            overflow: hidden;
+            line-height: 40px;
+        }
+        .caption>ul>li{
+            /* 首页 咨询 测评 商城 */
+            /* 设置浮动，宽度100px，文本居中 */
+            float: left;
+            width: 100px;
+            text-align: center;
+        }
+
+
+        .main1{
+            /* 标题块 宽1000px居中 */
+            width: 1000px;
+            height: 60px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .main1>ul{
+            /* ul 行高40px 垂直居中 */
+            list-style: none;
+            overflow: hidden;
+            line-height: 40px;
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+        }
+        .main1>ul>li{
+            /* li 浮动 */
+            float: left;
+            display: block;
+            margin-right: 10px;
+            text-align: center;
+        }
+        .main1>ul>li>img{
+            /* >图片水平居中 */
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+        }
+        .main1>ul>li:not(:first-child){
+            /* 缩进30px 避免被>覆盖 */
+            text-indent: 30px;
+        }
+
+
+        .main2{
+            /* 给背景框大小颜色 */
+            width: 1000px;
+            height: 170px;
+            background: rgb(235,235,235);
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .line1>ul{
+            /* 设置ul宽度 40px */
+            list-style: none;
+            overflow: hidden;
+            line-height: 40px;
+            position: absolute;
+            top: 5px;
+        }
+        .line1>ul>li{
+            /* li 浮动 */
+            float: left;
+            display: block;
+            margin: 0 5px;
+            text-align: center;
+        }
+        .line1>ul>li>p{
+            /* p标签变色 */
+            color: rgb(71, 198, 195);
+            font-size: 16px;
+            margin: 0 10px;
+        }
+        .line1>ul>li>button{
+            /* button标签设置宽度、颜色、字体大小 */
+            width: 76px;
+            background: rgb(235,235,235) center center;
+            border: rgb(235,235,235);
+            box-sizing: border-box;
+            font-size: 16px;
+            color:rgb(81, 81, 81);
+        }
+        .line1>ul>li>button:focus{
+            /* 点击时改变颜色与边框 */
+            box-sizing: border-box;
+            outline: none;
+            border: 2px solid rgb(252, 186, 86);
+            background: #ffffff;
+        }
+        .line2>ul{
+            /* 设置ul宽度 40px */
+            list-style: none;
+            overflow: hidden;
+            line-height: 40px;
+            position: absolute;
+            top: 45px;
+        }
+        .line2>ul>li{
+            /* li 浮动 */
+            float: left;
+            display: block;
+            margin: 0 5px;
+            text-align: center;
+        }
+        .line2>ul>li>p{
+            /* p标签变色 */
+            color: rgb(71, 198, 195);
+            font-size: 16px;
+            margin: 0 10px;
+        }
+        .line2>ul>li>button{
+            /* button标签设置宽度、颜色、字体大小 */
+            width: 76px;
+            background: rgb(235,235,235) center center;
+            border: rgb(235,235,235);
+            box-sizing: border-box;
+            font-size: 16px;
+            color:rgb(81, 81, 81);
+        }
+        .line2>ul>li>button:focus{
+            /* 点击时改变颜色与边框 */
+            box-sizing: border-box;
+            outline: none;
+            border: 2px solid rgb(252, 186, 86);
+            background: #ffffff;
+        }
+        .line3>ul{
+            /* 设置ul宽度 40px */
+            list-style: none;
+            overflow: hidden;
+            line-height: 40px;
+            position: absolute;
+            top: 85px;
+        }
+        .line3>ul>li{
+            /* li 浮动 */
+            float: left;
+            display: block;
+            margin: 0 5px;
+            text-align: center;
+        }
+        .line3>ul>li>p{
+            /* p标签变色 */
+            color: rgb(71, 198, 195);
+            font-size: 16px;
+            margin: 0 10px;
+        }
+        .line3>ul>li>button{
+            /* button标签设置宽度、颜色、字体大小 */
+            width: 76px;
+            background: rgb(235,235,235) center center;
+            border: rgb(235,235,235);
+            box-sizing: border-box;
+            font-size: 16px;
+            color:rgb(81, 81, 81);
+        }
+        .line3>ul>li>button:focus{
+            /* 点击时改变颜色与边框 */
+            box-sizing: border-box;
+            outline: none;
+            border: 2px solid rgb(252, 186, 86);
+            background: #ffffff;
+        }
+        .line4>ul{
+            /* 设置ul宽度 40px */
+            list-style: none;
+            overflow: hidden;
+            line-height: 40px;
+            position: absolute;
+            top: 125px;
+        }
+        .line4>ul>li{
+            /* li 浮动 */
+            float: left;
+            display: block;
+            margin: 0 5px;
+            text-align: center;
+        }
+        .line4>ul>li>p{
+            /* p标签变色 */
+            color: rgb(71, 198, 195);
+            font-size: 16px;
+            margin: 0 10px;
+        }
+        .line4>ul>li>button{
+            /* button标签设置宽度、颜色、字体大小 */
+            width: 76px;
+            background: rgb(235,235,235) center center;
+            border: rgb(235,235,235);
+            box-sizing: border-box;
+            font-size: 16px;
+            color:rgb(81, 81, 81);
+        }
+        .line4>ul>li>button:focus{
+            /* 点击时改变颜色与边框 */
+            box-sizing: border-box;
+            outline: none;
+            border: 2px solid rgb(252, 186, 86);
+            background: #ffffff;
+        }
+
+
+        .main3{
+            /* 第三块背景大小颜色 */
+            width: 1000px;
+            height: 60px;
+            background: rgb(235,235,235);
+            margin: 20px auto;
+            position: relative;
+        }
+        
+        .sort1{
+            /* 第一个排序标签大小 */
+            width: 120px;
+            height: 60px;
+            float: left;
+            position: relative;
+        }
+        .sort1>button{
+            /* button利用绝对位置水平垂直居中，设置颜色 */
+            position: absolute;
+            top: 50%; left: 50%;
+            margin-top: -11.2px;
+            margin-left: -50px;
+            width: 90px;
+            text-align: center;
+            background: rgb(235,235,235);
+            border: rgb(235,235,235);
+            box-sizing: border-box;
+            font-size: 14px;
+            color:rgb(81, 81, 81);
+        }
+        .sort1>img{
+            /* 排序小箭头调整位置 */
+            position: absolute;
+            top: 50%; left: 50%;
+            margin-top: -3.5px;
+            margin-left: 30px;
+        }
+        .sort2{
+            /* 第二个排序标签 */
+            width: 100px;
+            height: 60px;
+            float: left;
+            position: relative;
+        }
+        .sort2>button{
+            position: absolute;
+            top: 50%; left: 50%;
+            margin-top: -11.2px;
+            margin-left: -50px;
+            width: 60px;
+            text-align: center;
+            background: rgb(235,235,235);
+            border: rgb(235,235,235);
+            box-sizing: border-box;
+            font-size: 14px;
+            color:rgb(81, 81, 81);
+        }
+        .sort2>img{
+            position: absolute;
+            top: 50%; left: 50%;
+            margin-top: -3.5px;
+            margin-left: 5px;
+        }
+        .sort3{
+            /* 第三个排序标签 */
+            width: 120px;
+            height: 60px;
+            float: left;
+            position: relative;
+        }
+        .sort3>button{
+            position: absolute;
+            top: 50%; left: 50%;
+            margin-top: -11.2px;
+            margin-left: -75px;
+            width: 80px;
+            text-align: center;
+            background: rgb(235,235,235);
+            border: rgb(235,235,235);
+            box-sizing: border-box;
+            font-size: 14px;
+            color:rgb(81, 81, 81);
+        }
+        .sort3>img{
+            position: absolute;
+            top: 50%; left: 50%;
+            margin-top: -3.5px;
+            margin-left: 0px;
+        }
+        .main3>form{
+            /* 搜索框范围大小 设定相对坐标 */
+            width: 200px;
+            height: 20px;
+            position: relative;
+            margin: 18px 28px;
+            float: left;
+        }
+        .main3>form>input{
+            /* 输入框大小颜色格式 */
+            box-sizing: border-box;
+            width: 200px;
+            height: 20px;
+            background: white;
+            border: 1px solid #eee;
+        }
+        .main3>form>button{
+            /* 利用绝对坐标设定按钮位置 */
+            border: none;
+            width: 50px;
+            background: white;
+            position: absolute;
+            right: 5px;
+            font-size: 12px;
+            top: 4.6px;
+        }
+        .main3>form>button>div>i{
+            line-height: 16px;
+        }
+        .main3>.link{
+            float: left;
+            /* 改变颜色行高，利用绝对坐标放到右边 */
+            height: 30px;
+            line-height: 30px;
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            margin-top: -15px;
+        }
+        .main3>.link>a{
+            color: rgb(71, 198, 195);
+        }
+
+
+        .table1{
+            /* 第一行表格大小背景 */
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            background: #fff;
+            position: relative;
+        }
+        .table1>div{
+            /* 每个块大小颜色背景 */
+            width: 240px;
+            height: 340px;
+            box-sizing: border-box;
+            border: 1px solid rgb(223, 223, 223);
+            background: rgb(235,235,235);
+            float: left;
+            font-size: 12px;
+            color: rgb(81,81,81);
+        }
+        .table1>div>p{
+            /* p标签缩进15px */
+            text-indent: 15px;
+        }
+        .table1>.page>img{
+            /* 图片居中 */
+            display: block;
+            margin: 15px auto;
+        }
+        .table1>div:not(:last-child){
+            /* 每个块间距13.3333px */
+            margin-right:13.3333px;
+        }
+        h2,h3{
+            display: inline-block;
+            color: rgb(71, 198, 195);
+        }
+        h2{
+            margin-left: 15px;
+        }
+        /* 鼠标悬停变色 */
+        .page:hover{
+            cursor: pointer;
+            color: rgb(255, 170, 0);
+        }
+        .page:hover h2{
+            color: rgb(255, 170, 0);
+        }
+        .page:hover h3{
+            color: rgb(255, 170, 0);
+        }
+        .table2{
+            /* 第一行表格大小背景 */
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            background: #fff;
+            position: relative;
+            margin-top: 15px;
+        }
+        .table2>div{
+            /* 每个块大小颜色背景 */
+            width: 240px;
+            height: 340px;
+            box-sizing: border-box;
+            border: 1px solid rgb(223, 223, 223);
+            background: rgb(235,235,235);
+            float: left;
+            font-size: 12px;
+            color: rgb(81,81,81);
+        }
+        .table2>div>p{
+            /* p标签缩进15px */
+            text-indent: 15px;
+        }
+        .table2>.page>img{
+            /* 图片居中 */
+            display: block;
+            margin: 15px auto;
+        }
+        .table2>div:not(:last-child){
+            /* 每个块间距13.3333px */
+            margin-right:13.3333px;
+        }
+
+
+        .main4{
+            /* 设置背景宽高，字体大小 */
+            width: 1000px;
+            height: 30px;
+            margin: 15px auto;
+            font-size: 14px;
+        }
+        /* 上一页 */
+        .main4>.page-up{
+            float: left;
+            width: 120px;
+            height: 30px;
+            background: rgb(235, 235, 235);
+            text-align: center;
+            margin-right: 20px;
+        }
+        .main4>.page-up>a{
+            line-height: 30px;
+            color: rgb(81, 81, 81);
+        }
+        .main4>a{
+            /* 颜色、位置 */
+            display: block;
+            margin: 7px 15px;
+            float: left;
+            color: rgb(81, 81, 81);
+        }
+        .main4>a:hover{
+            color: rgb(255, 170, 0);
+            text-decoration: underline;
+        }
+        .main4>a:focus{
+            color: rgb(255, 170, 0);
+            text-decoration: underline;
+        }
+        /* 下一页 */
+        .main4>.page-down{
+            float: left;
+            width: 120px;
+            height: 30px;
+            background: rgb(235, 235, 235);
+            text-align: center;
+            margin-left: 20px;
+            margin-right: 50px;
+        }
+        .main4>.page-down>a{
+            line-height: 30px;
+            color: rgb(81, 81, 81);
+        }
+        /* 页码 */
+        .main4>.page-number{
+            float: left;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+        }
+        .main4>.page-number>p{
+            display: inline;
+            line-height: 30px;
+        }
+        /* 输入框与页码 */
+        .main4>.page-number>input{
+            box-sizing: border-box;
+            width: 30px;
+            height: 30px;
+            border: 2px solid rgb(81, 81, 81);
+        }
+        .main4>.ensure{
+            margin: 0 30px;
+            width: 60px;
+            height: 30px;
+            background: rgb(255, 170, 0);
+            text-align: center;
+            line-height: 30px;
+            float: left;
+            border: none;
+            color: white;
+        }
+
+
+        .main5{
+            /* 二维码块背景宽高 */
+            width: 1000px;
+            height: 82px;
+            margin: 20px auto;
+            position: relative;
+        }
+        .main5>img{
+            /* 二维码位置 */
+            float: left;
+            margin-left: 20px;
+        }
+        .main5>h3{
+            /* 需求反馈位置 */
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        .main5>h3>a{
+            color: rgb(71, 198, 195);
+        }
+        .main5>div{
+            /* 文字位置，利用绝对位置实现 */
+            position: absolute;
+            left: 120px;
+            bottom: 5px;
+            font-size: 14px;
+        }
+
+
+        /* 最下面一块 */
+        .main6{
+            height: 220px;
+            background: rgb(81, 81, 81);
+        }
+        /* 背景主体 */
+        .main6>.background{
+            width: 1000px;
+            margin: auto;
+            position: relative;
+        }
+        /* Home+介绍块 */
+        .main6>.background>.introduce{
+            width: 350px;
+            height: 180px;
+            color: rgb(198, 195, 198);
+            font-size: 12px;
+        }
+        .main6>.background>.introduce>img{
+            margin: 30px 0 15px 20px;
+        }
+        .main6>.background>.introduce>.p1{
+            font-weight:bold;
+            font-size: 12.5px;
+            margin: 0 0 10px 20px;
+            color: #eee;
+        }
+        .main6>.background>.introduce>.p2{
+            margin: 0 0 20px 20px;
+            line-height: 20px;
+        }
+        /* 关于我们...6个链接 */
+        .main6>.background>.about-us{
+            position: absolute;
+            left: 45%;
+            top: 0;
+            width: 400px;
+            height: 150px;
+            margin-top: 65px;
+        }
+        .main6>.background>.about-us>a{
+            display: inline-block;
+            margin: 0 40px 15px 30px;
+            font-size: 12px;
+            color: rgb(198, 195, 198);
+        }
+        /* 三个商城链接 */
+        .main6>.background>.mall{
+            width: 120px;
+            height: 150px;
+            /* background: yellow; */
+            position: absolute;
+            right: 80px;
+            top: 45px;
+            font-size: 12px;
+        }
+        .weixin,.tianmao,.shangcheng{
+            margin: 20px 0;
+            position: relative;
+        }
+        .weixin>img,.tianmao>img,.shangcheng>img{
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+        }
+        .weixin>a,.tianmao>a,.shangcheng>a{
+            color: rgb(198, 195, 198);
+            margin-left: 30px;
+        }
+        /* 分割线 */
+        hr{
+            height: 0px;
+            border: 0.5px solid rgb(115, 115, 115);
+        }
+        /* 深圳... */
+        .last{
+            margin-top: 12px;
+            width: 1000px;
+            /* background: yellow; */
+            font-size: 12px;
+            position: relative;
+        }
+        .last>a{
+            color: rgb(198, 195, 198);
+        }
+        /* 左缩进20px 右绝对定位缩进20px */
+        .last>a:first-child{
+            margin-left: 20px;
+        }
+        .last>a:last-child{
+            position: absolute;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="first"></div>
+    <!-- 标题栏 -->
+    <div class="head">
+        <div class="title">
+            <div class="location">
+                <img src="../images/location.png" alt="">
+                <button>深圳<切换></button>
+            </div>
+            <div class="caption">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">咨询</a></li>
+                    <li><a href="#">测评</a></li>
+                    <li><a href="#">商城</a></li>
+                </ul>
+            </div>
+            <div class="admin">
+                <img src="../images/adm.png" alt="">
+                <a href="#">个人中心</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 首页... -->
+    <div class="main1">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><img src="../images/大于号.png" alt=""></li>
+            <li><a href="#">预防装修污染</a></li>
+            <li><img src="../images/大于号.png" alt=""></li>
+            <li><a href="#">材料库</a></li>
+        </ul>
+    </div>
+
+    <!-- 类别... -->
+    <div class="main2">
+        <div class="line1">
+            <ul>
+                <li><p>类别</p></li>
+                <li><button>全部</button></li>
+                <li><button>地板</button></li>
+                <li><button>涂料</button></li>
+                <li><button>墙纸</button></li>
+                <li><button>瓷砖</button></li>
+                <li><button>粘胶剂</button></li>
+                <li><button>油漆</button></li>
+                <li><button>家具</button></li>
+                <li><button>板材</button></li>
+                <li><button>饰品</button></li>
+                <li><img src="../images/indexSelect.png" alt=""></li> 
+            </ul>
+        </div>
+        <div class="line2">
+            <ul>
+                <li><p>类型</p></li>
+                <li><button>全部</button></li>
+            </ul>
+        </div>
+        <div class="line3">
+            <ul>
+                <li><p>材质</p></li>
+                <li><button>全部</button></li>
+                <li><button>实木</button></li>
+                <li><button>复合</button></li>
+                <li><button>强化</button></li>
+                <li><button>其他</button></li>
+            </ul>
+        </div>
+        <div class="line4">
+            <ul>
+                <li><p>品牌</p></li>
+                <li><button>全部</button></li>
+                <li><button>圣象</button></li>
+                <li><button>大自然</button></li>
+                <li><button>生活家</button></li>
+                <li><button>北美枫情</button></li>
+                <li><button>德尔</button></li>
+                <li><button>博典</button></li>
+                <li><button>船王</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 发布时间... -->
+    <div class="main3">
+        <div class="sort1">
+            <button>发布时间</button>
+            <img src="../images/downicon.png" alt="">
+        </div>
+        <div class="sort2">
+            <button>价格</button>
+            <img src="../images/upicon.png" alt="">
+        </div>
+        <div class="sort3">
+            <button>环保节能</button>
+            <img src="../images/upicon.png" alt="">
+        </div>
+        <form>
+            <input type="text">
+            <button>
+                <div>
+                    <i class="iconfont">&#xe819;</i>
+                    搜索
+                </div>
+            </button>
+        </form>
+        <div class="link">
+            <a href="#"><i class="iconfont">&#xe67f;</i>了解家居医生建材环保评级标准</a>
+        </div>
+    </div>
+
+    <!-- 8个框 -->
+    <div class="table1">
+        <div class="page">
+            <img src="../images/data_image.png" alt="">
+            <p>德尔 &#160 &#160 &#160 都市系列3001</p>
+            <p>木地板 - 复合地板</p>
+            <p>单价：128元 / ㎡</p>
+            <br>
+            <h2 class="h2">环保评级：B</h2><h3 class="h3">（可以使用）</h3>
+        </div>
+        <div class="page">
+            <img src="../images/data_image.png" alt="">
+            <p>德尔 &#160 &#160 &#160 都市系列3001</p>
+            <p>木地板 - 复合地板</p>
+            <p>单价：128元 / ㎡</p>
+            <br>
+            <h2>环保评级：B</h2><h3>（可以使用）</h3>
+        </div>
+        <div class="page">
+            <img src="../images/data_image.png" alt="">
+            <p>德尔 &#160 &#160 &#160 都市系列3001</p>
+            <p>木地板 - 复合地板</p>
+            <p>单价：128元 / ㎡</p>
+            <br>
+            <h2>环保评级：B</h2><h3>（可以使用）</h3>
+        </div>
+        <div class="page">
+            <img src="../images/data_image.png" alt="">
+            <p>德尔 &#160 &#160 &#160 都市系列3001</p>
+            <p>木地板 - 复合地板</p>
+            <p>单价：128元 / ㎡</p>
+            <br>
+            <h2>环保评级：B</h2><h3>（可以使用）</h3>
+        </div>
+    </div>
+
+    <div class="table2">
+        <div class="page">
+            <img src="../images/data_image.png" alt="">
+            <p>德尔 &#160 &#160 &#160 都市系列3001</p>
+            <p>木地板 - 复合地板</p>
+            <p>单价：128元 / ㎡</p>
+            <br>
+            <h2>环保评级：B</h2><h3>（可以使用）</h3>
+        </div>
+        <div class="page">
+            <img src="../images/data_image.png" alt="">
+            <p>德尔 &#160 &#160 &#160 都市系列3001</p>
+            <p>木地板 - 复合地板</p>
+            <p>单价：128元 / ㎡</p>
+            <br>
+            <h2>环保评级：B</h2><h3>（可以使用）</h3>
+        </div>
+        <div class="page">
+            <img src="../images/data_image.png" alt="">
+            <p>德尔 &#160 &#160 &#160 都市系列3001</p>
+            <p>木地板 - 复合地板</p>
+            <p>单价：128元 / ㎡</p>
+            <br>
+            <h2>环保评级：B</h2><h3>（可以使用）</h3>
+        </div>
+        <div class="page">
+            <img src="../images/data_image.png" alt="">
+            <p>德尔 &#160 &#160 &#160 都市系列3001</p>
+            <p>木地板 - 复合地板</p>
+            <p>单价：128元 / ㎡</p>
+            <br>
+            <h2>环保评级：B</h2><h3>（可以使用）</h3>
+        </div>
+    </div>
+
+    <!-- 下一页... -->
+    <div class="main4">
+        <div class="page-up">
+            <a href="#">上一页</a>
+        </div>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <div class="page-down">
+            <a href="#">下一页</a>
+        </div>
+        <div class="page-number">
+            <p>共有10页，去第 &#160 </p>
+            <input type="text">
+            <p> &#160 页</p>
+        </div>
+        <button class="ensure">
+            确定
+        </button>
+    </div>
+
+    <!-- 二维码... -->
+    <div class="main5">
+        <img src="../images/small_weixin.png" alt="">
+        <h3><a href="#">建材检测 需求反馈</a></h3>
+        <div>
+            <p>亲爱的用户，我们正在不断的完善和更新建材库，</p>
+            <p>若没有找到您要的材料信息，请将您想测的建材告诉我们。</p>
+        </div>
+    </div>
+
+    <!-- 底部背景 -->
+    <div class="main6">
+        <div class="background">
+            <div class="introduce">
+                <img src="../images/footerLogo.png" alt="">
+                <p class="p1">为室内环境健康把好每一关</p>
+                <p class="p2">家居医生致力于中国人的家居健康问题，通过专业的技术研究和测评，倾力协助大众打造绿色、环保的人居生活环境。</p>
+            </div>
+            <div class="about-us">
+                <a href="#">关于我们</a>
+                <a href="#">版权说明</a>
+                <br>
+                <a href="#">联系我们</a>
+                <a href="#">用户隐私</a>
+                <br>
+                <a href="#">加入我们</a>
+                <a href="#">免责申明</a>
+                <br>
+            </div>
+            <div class="mall">
+                <div class="weixin">
+                    <img src="../images/weixin2.png" alt="">
+                    <a href="#">官方微信</a>
+                </div>
+                <div class="tianmao">
+                    <img src="../images/tianmao.png" alt="">
+                    <a href="#">天猫旗舰店</a>
+                </div>
+                <div class="shangcheng">
+                    <img src="../images/shop.png" alt="">
+                    <a href="#">有赞商城</a>
+                </div>
+            </div>
+            <hr>
+            <div class="last">
+                <a href="#">深圳建筑科学研究院股份有限公司 &#160&#160 家居医生网</a>
+                <a href="#">粤ICP备08011321号 ©Copyright All Rights Reserved</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

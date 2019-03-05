@@ -1,0 +1,28 @@
+.main5{
+    /* 二维码块背景宽高 */
+    width: 1000px;
+    height: 82px;
+    margin: 20px auto;
+    position: relative;
+}
+.main5>img{
+    /* 二维码位置 */
+    float: left;
+    margin-left: 20px;
+}
+.main5>h3{
+    /* 需求反馈位置 */
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.main5>h3>a{
+    color: rgb(71, 198, 195);
+}
+.main5>div{
+    /* 文字位置，利用绝对位置实现 */
+    position: absolute;
+    left: 120px;
+    bottom: 5px;
+    font-size: 14px;
+}

@@ -1,0 +1,129 @@
+.main3{
+    /* 第三块背景大小颜色 */
+    width: 1000px;
+    height: 60px;
+    background: rgb(235,235,235);
+    margin: 20px auto;
+    position: relative;
+}
+
+.sort1{
+    /* 第一个排序标签 */
+    float: left;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+.sort1>a{
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 50%; left: 50%;
+    margin-top: -9.6px;
+    margin-left: -50px;
+    color:rgb(81, 81, 81);
+}
+.sort1>img{
+    /* 排序小箭头调整位置 */
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-top: -3.5px;
+    margin-left: 32px;
+}
+
+.sort2{
+    /* 第二个排序标签 */
+    float: left;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+.sort2>a{
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 50%; left: 50%;
+    margin-top: -9.6px;
+    margin-left: -50px;
+    color:rgb(81, 81, 81);
+}
+.sort2>img{
+    /* 排序小箭头调整位置 */
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-top: -3.5px;
+    margin-left: 20px;
+}
+
+.sort3{
+    /* 第一个排序标签 */
+    float: left;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+.sort3>a{
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 50%; left: 50%;
+    margin-top: -9.6px;
+    margin-left: -50px;
+    color:rgb(81, 81, 81);
+}
+.sort3>img{
+    /* 排序小箭头调整位置 */
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-top: -3.5px;
+    margin-left: 32px;
+}
+
+.main3>form{
+    /* 搜索框范围大小 设定相对坐标 */
+    width: 200px;
+    height: 20px;
+    position: relative;
+    margin: 18px 50px;
+    float: left;
+}
+.main3>form>input{
+    /* 输入框大小颜色格式 */
+    box-sizing: border-box;
+    width: 200px;
+    height: 20px;
+    background: white;
+    border: 1px solid #eee;
+}
+.main3>form>button{
+    /* 利用绝对坐标设定按钮位置 */
+    border: none;
+    width: 50px;
+    background: white;
+    position: absolute;
+    right: 2px;
+    font-size: 12px;
+    top: 4.6px;
+}
+.main3>form>button>div>i{
+    line-height: 16px;
+}
+.main3>.link{
+    float: left;
+    /* 改变颜色行高，利用绝对坐标放到右边 */
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -15px;
+}
+.main3>.link>a{
+    color: rgb(71, 198, 195);
+}
