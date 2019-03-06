@@ -1,0 +1,195 @@
+*{margin: 0;padding: 0}
+/* 标题图片 小米商城 */
+.head{
+    width: 200px;
+    height: 98px;
+    margin-left: 191px;
+}
+.head>a>img{
+    height: 82.5px;
+    margin-top: 4.5px;
+}
+/* 背景图片 */
+.background{
+    width: 100%+520px;
+    height: 556px;
+    background-image: url("https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/553c5e503fc83138c76bd7c17c1434db.jpeg");
+    margin-left: -520px;
+    position: relative;
+}
+
+/* 登录框 */
+.login{
+    width: 410px;
+    height: 524px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -230px;
+    right: 195px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+/* 帐号登录标题 */
+.title{
+    width: 360px;
+    height: 83px;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+}
+.title>a{
+    color: #666666;
+    margin: auto;
+}
+.title>a:hover,.title>a:focus{
+    color: #FF6700;
+}
+/* 中间小分隔块 */
+.title>span{
+    display: block;
+    height: 26px;
+    width: 0.5px;
+    background: #E0E0E0;
+    border: 1px solid #E0E0E0;
+    margin: 27.5px 0;
+}
+
+/* 用户名密码按钮 */
+.login>input{
+    box-sizing: border-box; 
+    width: 348px;
+    height: 50px;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #E0E0E0;
+}
+.login>.btn{
+    width: 348px;
+    height: 50px;
+    border: none;
+    background: #FF6700;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* 下方注册/忘记密码链接 */
+.link{
+    /* background: red; */
+    width: 348px;
+    height: 50px;
+    position: relative;
+    margin: auto;
+}
+.link>a{
+    font-size: 14px;
+    color: #FF6700;
+    position: absolute;
+    left: 0;
+}
+.link>div{
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+}
+span{
+    color: #999999;
+}
+.link>div>a{
+    color: #999999;
+}
+
+/* 底部QQ微博支付宝微信图标 */
+.form{
+    width: 348px;
+    height: 30px;
+    margin: 90px auto 0;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+/* 其他方式登录行 */
+.form>span{
+    display: block;
+    /* height: 19.2px; */
+    width: 348px;
+    color: #C1C1C1;
+    font-size: 14px;
+    margin: 13px auto;
+}
+/* 四个图标a标签 */
+.form>a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+    border-radius: 50%;
+    position: relative;
+}
+/* 设置i标签背景为图片 */
+i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url("../images/icons_type.png");
+}
+/* 调整颜色与位置 */
+.qq{
+    background: #2096D6;
+}
+.qq>i{
+    background-position-x: -19px;
+}
+.weibo{
+    background: #D32F2F;
+}
+.weibo>i{
+    background-position-x: -38px;
+}
+.zhifu{
+    background: #00AAEE;
+}
+.zhifu>i{
+    width: 24px;
+    background-position-x: -57px;
+}
+.weixin{
+    background: #00D20D;
+}
+.weixin>i{
+    width: 24px;
+    background-position-x: -83px;
+}
+
+/* 底部链接行 */
+.end{
+    padding-top: 90px;
+    text-align: center;
+    margin: auto;
+    font-size: 14.5px;
+    color: rgb(147, 147, 147);
+}
+.end>a{
+    display: inline-block;
+    color: rgb(147, 147, 147);
+    font-size: 14.5px;
+    margin: 10px 5px;
+}
+.end>span{
+    font-size: 12px;
+}
+.end>a:hover{
+    color: rgb(81, 81, 81);
+}
+.end>a:focus{
+    color: rgb(81, 81, 81);
+}
+.end>a:last-child{
+    margin: 0 0 20px;
+}
