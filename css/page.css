@@ -70,6 +70,9 @@
     border: 2px solid rgb(81, 81, 81);
     text-indent: 10px;
 }
+.page>.page-number>input:focus{
+    outline: none;
+}
 .page>.ensure{
     margin: 0 30px;
     width: 60px;

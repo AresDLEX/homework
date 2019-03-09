@@ -68,6 +68,9 @@ a{
     margin: 10px 0;
     border: 1px solid #E0E0E0;
 }
+.account>input:focus{
+    outline: none;
+}
 .account>.btn{
     width: 348px;
     height: 50px;
@@ -76,7 +79,7 @@ a{
     color: #fff;
     font-size: 14px;
 }
-
+/* 扫码登录模块 */
 .saomiao{
     display: none;
     font-size: 14px;
