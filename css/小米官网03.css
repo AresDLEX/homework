@@ -1,0 +1,190 @@
+.main{
+    position: relative;
+    width: 1240px;
+    margin: auto;
+}
+/* 左边标签 */
+.left{
+    width: 248px;
+    height: 592px;
+    border-left: 1px solid rgb(223, 223, 223);
+}
+/* 每个块 */
+.left>div{
+    width: 248px;
+    height: 74px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+.left>div>p{
+    display: block;
+    font-size: 13px;
+    line-height: 13px;
+    color: rgb(254, 118, 62);
+    padding: 20px 0 0 20px;
+    margin: 0;
+}
+.left>div>a{
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    font-size: 13px;
+    line-height: 13px;
+    color: rgb(153, 153, 153);
+    margin-top: 15px;
+}
+.indent{
+    margin-left: 20px;
+}
+
+/* 轮播 */
+.content{
+    cursor: pointer;
+    width:992px;height:420px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#list{
+    position: absolute;
+    width:992px;
+    height:420px;
+}
+#list img,#prev,#next,#btns{
+    position: absolute;
+}
+#list img:not(:first-child){
+    display: none;
+}
+#prev,#next{
+    cursor: pointer;
+    top:50%;transform: translateY(-50%);
+    z-index: 100;width:40px;height:70px;
+    background:url("../images/icon-slides.png");
+    border:none;
+    outline: none;
+}
+#prev{
+    background-position-x:-86px
+}
+#prev:hover{
+    background-position: 0;
+}
+#next:hover{
+    background-position-x: -43px
+}
+#next{
+    right:0;
+    background-position-x:-125px;
+}
+#btns{
+    z-index: 101;
+    /* transform: translateX(-50%); */
+    bottom: 20px;
+    right: 20px;
+}
+#btns .current{
+    /* background:orangered; */
+    color: #fff;
+}    
+#btns>span{
+    cursor: pointer;
+    width:30px;
+    height:30px;
+    display: inline-block;
+    border-radius: 50%;
+    border:1px solid #fff;
+    background-color:rgba(44,44,44,.5);
+    text-align: center;
+    line-height: 30px;
+}
+
+/* 右下角三张图 */
+.img{
+    width: 992px;
+    height: 172px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.img>img{
+    display: block;
+    float: left;
+    width: 330.66px;
+    height: 172px;
+    border-right: 1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+
+/* 小米明星单品 */
+.fashion{
+    width: 1240px;
+    height: 60px;
+    /* background: red; */
+    margin: auto;
+    font-size: 16px;
+    line-height: 60px;
+    color: rgb(114, 114, 114);
+    position: relative;
+}
+.fashion>p{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 60px;
+    margin-left: 5px;
+    color: rgb(163, 154, 154);
+}
+/* 切换页码图标 */
+.fashion>div{
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+}
+.fashion>div>a{
+    display: block;
+    float: left;
+    width: 32px;
+    height: 22px;
+    border: 1px solid rgb(223, 223, 223);
+}
+.fashion>div>a:first-child{
+    background: url("../images/05.png") no-repeat center center;
+}
+.fashion>div>a:last-child{
+    background: url("../images/06.png") no-repeat center center;
+}
+
+/* 小米明星单品 4个框 */
+.img-fashion{
+    width: 1240px;
+    height: 310px;
+    margin: auto;
+}
+.img-fashion>div{
+    float: left;
+    width: 310px;
+    height: 310px;
+    border-top: 1px solid rgb(223, 223, 223);
+    border-left: 1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid rgb(223, 223, 223);
+    text-align: center;
+    font-size: 17px;
+    color: rgb(86, 86, 86);
+    position: relative;
+}
+.img-fashion>div:last-child{
+    border-right: 1px solid rgb(223, 223, 223);
+}
+/* 每个框图片、文字属性 */
+.img-fashion>div>img{
+    display: block;
+    margin: 0 auto 5px;
+}
+.img-fashion>div>span{
+    display: block;
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 35px;
+}
