@@ -1,0 +1,52 @@
+.table{
+    /* 第一行表格大小背景 */
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    margin-top: 15px;
+}
+.table>div{
+    /* 每个块大小颜色背景 */
+    width: 240px;
+    height: 340px;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    background: rgb(235,235,235);
+    float: left;
+    font-size: 12px;
+    color: rgb(81,81,81);
+}
+.table>div>p{
+    /* p标签缩进15px */
+    text-indent: 15px;
+}
+.table>.block>img{
+    /* 图片居中 */
+    display: block;
+    margin: 15px auto;
+}
+.table>div:not(:last-child){
+    /* 每个块间距13.3333px */
+    margin-right:13.3333px;
+}
+h2,h3{
+    display: inline-block;
+    color: rgb(71, 198, 195);
+}
+h2{
+    margin-left: 15px;
+}
+/* 鼠标悬停变色 */
+.block:hover{
+    cursor: pointer;
+    color: rgb(255, 170, 0);
+}
+.block:hover h2{
+    color: rgb(255, 170, 0);
+}
+.block:hover h3{
+    color: rgb(255, 170, 0);
+}

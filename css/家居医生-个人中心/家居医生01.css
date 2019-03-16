@@ -1,0 +1,237 @@
+*{margin: 0;padding: 0}
+a{
+    /* 去掉超链接格式 */
+    text-decoration: none;
+    color:rgb(81, 81, 81);
+    outline: none;
+}
+.first{
+    /* 第一行 绿色背景 logo居中 */
+    background: rgb(24,190,190) url("../../images/logo.png") no-repeat center center;
+    height: 72px;
+}
+
+.head{
+    /* 标题栏背景 灰色文本居中 */
+    height: 40px;
+    background: rgb(235,235,235);
+    text-align: center;
+}
+.title{
+    /* 标题块 宽1000px居中 */
+    width: 1000px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+.location{
+    /* 标题栏 定位 绝对定位居左 */
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    font-size: 13px;
+}
+.location>img{
+    /* 定位图片logo 利用绝对定位垂直居中 */
+    position: absolute;
+    top:50%; left: 0;
+    margin-top: -9.5px;
+}
+.location>a{
+    display: block;
+    width: 100px;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.admin{
+    /* 标题栏 个人中心 绝对定位居右 */
+    position: absolute;
+    top: 0; bottom: 0; right: 0;
+    height: 40px;
+    font-size: 14px;
+}
+.admin>a{
+    line-height: 40px;
+    color: #fea700;
+}
+.admin>img{
+    /* 个人中心logo 利用绝对定位垂直居中 */
+    position: absolute;
+    top:50%;
+    right: 105%;
+    margin-top: -9.5px;
+    margin-right: 5px;
+}
+.caption{
+    /* 标题栏中间标题 宽度420px居中 */
+    width: 300px;
+    height: 40px;
+    margin: 0 330px 0 370px;
+}
+.caption>a{
+    display: inline-block;
+    width: 70px;
+    line-height: 40px;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+.main{
+    width: 1000px;
+    margin: 20px auto 50px;
+    overflow: hidden;
+}
+.left{
+    float: left;
+    width: 200px;
+    background: #F0F0F0;
+}
+.begin{
+    display: inline-block;
+    width: 200px;
+    line-height: 60px;
+    border: 1px solid #E1E1E1;
+    border-left: 4px solid #1AC0C0;
+    background-color: #F0F0F0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #1AC0C0;
+}
+.begin:hover{
+    color: #fea700;
+}
+span{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url(../../images/open.png) no-repeat;
+    margin-left: -20px;
+}
+ul{
+    display: block;
+    margin: 10px auto 30px;
+}
+li{
+    display: block;
+    width: 200px;
+    margin: 5px 60px;
+}
+li>a{
+    text-align: center;
+    font-size: 14px;
+}
+li>h4{
+    display: inline-block;
+    margin-left: 10px;
+}
+.binding:hover{
+    color: #fea700;
+}
+iframe{
+    float: left;
+    width: 780px;
+    height: 738px;
+    background: #F0F0F0;
+    margin: 0 10px;
+}
+
+
+/* 最下面一块 */
+.end{
+    height: 220px;
+    background: rgb(81, 81, 81);
+}
+/* 背景主体 */
+.end>.background{
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+/* Home+介绍块 */
+.end>.background>.introduce{
+    width: 350px;
+    height: 180px;
+    color: rgb(198, 195, 198);
+    font-size: 12px;
+}
+.end>.background>.introduce>img{
+    margin: 30px 0 15px 20px;
+}
+.end>.background>.introduce>.p1{
+    font-weight:bold;
+    font-size: 12.5px;
+    margin: 0 0 10px 20px;
+    color: #eee;
+}
+.end>.background>.introduce>.p2{
+    margin: 0 0 20px 20px;
+    line-height: 20px;
+}
+/* 关于我们...6个链接 */
+.end>.background>.about-us{
+    position: absolute;
+    left: 45%;
+    top: 0;
+    width: 400px;
+    height: 150px;
+    margin-top: 65px;
+}
+.end>.background>.about-us>a{
+    display: inline-block;
+    margin: 0 40px 15px 30px;
+    font-size: 12px;
+    color: rgb(198, 195, 198);
+}
+/* 三个商城链接 */
+.end>.background>.mall{
+    width: 120px;
+    height: 150px;
+    /* background: yellow; */
+    position: absolute;
+    right: 80px;
+    top: 45px;
+    font-size: 12px;
+}
+.weixin,.tianmao,.shangcheng{
+    margin: 20px 0;
+    position: relative;
+}
+.weixin>img,.tianmao>img,.shangcheng>img{
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+}
+.weixin>a,.tianmao>a,.shangcheng>a{
+    color: rgb(198, 195, 198);
+    margin-left: 30px;
+}
+/* 分割线 */
+hr{
+    height: 0px;
+    border: 0.5px solid rgb(115, 115, 115);
+}
+/* 深圳... */
+.last{
+    margin-top: 12px;
+    width: 1000px;
+    /* background: yellow; */
+    font-size: 12px;
+    position: relative;
+}
+.last>a{
+    color: rgb(198, 195, 198);
+}
+/* 左缩进20px 右绝对定位缩进20px */
+.last>a:first-child{
+    margin-left: 20px;
+}
+.last>a:last-child{
+    position: absolute;
+    right: 20px;
+}

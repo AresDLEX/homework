@@ -1,0 +1,130 @@
+.search{
+    /* 第三块背景大小颜色 */
+    width: 1000px;
+    height: 60px;
+    background: rgb(235,235,235);
+    margin: 20px auto;
+    position: relative;
+}
+.time{
+    /* 第一个排序标签 */
+    float: left;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+.time>a{
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 50%; left: 50%;
+    margin-top: -9.6px;
+    margin-left: -50px;
+    color:rgb(81, 81, 81);
+}
+.time>img{
+    /* 排序小箭头调整位置 */
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-top: -3.5px;
+    margin-left: 32px;
+}
+
+.price{
+    /* 第二个排序标签 */
+    float: left;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+.price>a{
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 50%; left: 50%;
+    margin-top: -9.6px;
+    margin-left: -50px;
+    color:rgb(81, 81, 81);
+}
+.price>img{
+    /* 排序小箭头调整位置 */
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-top: -3.5px;
+    margin-left: 20px;
+}
+
+.protect{
+    /* 第一个排序标签 */
+    float: left;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+.protect>a{
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 50%; left: 50%;
+    margin-top: -9.6px;
+    margin-left: -50px;
+    color:rgb(81, 81, 81);
+}
+.protect>img{
+    /* 排序小箭头调整位置 */
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-top: -3.5px;
+    margin-left: 32px;
+}
+
+.search>form{
+    /* 搜索框范围大小 设定相对坐标 */
+    width: 240px;
+    height: 20px;
+    margin: 20px 70px;
+    float: left;
+    position: relative;
+}
+.search>form>input{
+    /* 输入框大小颜色格式 */
+    /* box-sizing: border-box; */
+    width: 240px;
+    height: 20px;
+    background: white;
+    border: 1px solid #eee;
+}
+.search>form>button{
+    /* 利用绝对坐标设定按钮位置 */
+    border: none;
+    width: 50px;
+    height: 18px;
+    background: white;
+    text-align: center;
+    position: absolute;
+    font-size: 13px;
+    right: 0; top: 4px;
+    color: rgb(81, 81, 81);
+}
+.search>form>button>i{
+    font-size: 14px;
+}
+.search>.link{
+    float: left;
+    /* 改变颜色行高，利用绝对坐标放到右边 */
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -15px;
+}
+.search>.link>a{
+    color: rgb(71, 198, 195);
+}

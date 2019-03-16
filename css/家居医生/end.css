@@ -1,0 +1,94 @@
+/* 最下面一块 */
+.end{
+    height: 220px;
+    background: rgb(81, 81, 81);
+}
+/* 背景主体 */
+.end>.background{
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+/* Home+介绍块 */
+.end>.background>.introduce{
+    width: 350px;
+    height: 180px;
+    color: rgb(198, 195, 198);
+    font-size: 12px;
+}
+.end>.background>.introduce>img{
+    margin: 30px 0 15px 20px;
+}
+.end>.background>.introduce>.p1{
+    font-weight:bold;
+    font-size: 12.5px;
+    margin: 0 0 10px 20px;
+    color: #eee;
+}
+.end>.background>.introduce>.p2{
+    margin: 0 0 20px 20px;
+    line-height: 20px;
+}
+/* 关于我们...6个链接 */
+.end>.background>.about-us{
+    position: absolute;
+    left: 45%;
+    top: 0;
+    width: 400px;
+    height: 150px;
+    margin-top: 65px;
+}
+.end>.background>.about-us>a{
+    display: inline-block;
+    margin: 0 40px 15px 30px;
+    font-size: 12px;
+    color: rgb(198, 195, 198);
+}
+/* 三个商城链接 */
+.end>.background>.mall{
+    width: 120px;
+    height: 150px;
+    /* background: yellow; */
+    position: absolute;
+    right: 80px;
+    top: 45px;
+    font-size: 12px;
+}
+.weixin,.tianmao,.shangcheng{
+    margin: 20px 0;
+    position: relative;
+}
+.weixin>img,.tianmao>img,.shangcheng>img{
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+}
+.weixin>a,.tianmao>a,.shangcheng>a{
+    color: rgb(198, 195, 198);
+    margin-left: 30px;
+}
+/* 分割线 */
+hr{
+    height: 0px;
+    border: 0.5px solid rgb(115, 115, 115);
+}
+/* 深圳... */
+.last{
+    margin-top: 12px;
+    width: 1000px;
+    /* background: yellow; */
+    font-size: 12px;
+    position: relative;
+}
+.last>a{
+    color: rgb(198, 195, 198);
+}
+/* 左缩进20px 右绝对定位缩进20px */
+.last>a:first-child{
+    margin-left: 20px;
+}
+.last>a:last-child{
+    position: absolute;
+    right: 20px;
+}
