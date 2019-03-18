@@ -6,7 +6,6 @@ ul{
 	padding: 0;
 	margin: 0;
 }
-
 .mx_center{
 	margin-left: auto;
 	margin-right: auto;
@@ -21,7 +20,6 @@ ul{
 	display: table;
 	clear: both;
 }
-
 .mx_navigation{
 	width: 100%;
 }
@@ -57,7 +55,7 @@ ul{
 	border-color: white;
 	background-color:#2dae36;
 }
-.mx_navigation .navbar-collapse{
+.mx_navigation{
 	padding:0;
 }
 .mx_navigation .navbar-default .navbar-toggle:hover .icon-bar{
@@ -79,7 +77,6 @@ ul{
 	color:#2dae36 !important;
 	border-bottom: 2px solid #2dae36 !important;
 }
-/*搴曢儴鏍峰紡*/
 .footer{
 	padding-top:24px;
 	padding-bottom:16px;
@@ -132,7 +129,7 @@ ul{
 	.mx_navigation .navbar-nav>li:hover>a{
 		border-bottom: 0.5px solid #2dae36;
 	}
-	.mx_navigation .navbar-nav .a{
+	.mx_navigation .navbar-nav .select>a{
 		color:#2dae36;
 		border-bottom: 0.5px solid #2dae36;
 	}

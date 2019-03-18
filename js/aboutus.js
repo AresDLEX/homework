@@ -10,10 +10,10 @@ $(function(){
 	map.addControl(new BMap.MapTypeControl());
 	map.enableScrollWheelZoom(true); 
 	marker.addEventListener("click",getAttr);
-	var label = new BMap.Label("鏈ㄥ叜鍦版澘婀栧寳钀ラ攢涓績",{offset:new BMap.Size(20,-10)});
+	var label = new BMap.Label("木兮地板湖北营销中心",{offset:new BMap.Size(20,-10)});
 	marker.setLabel(label);
 
 	function getAttr(){
-	    alert("鏈ㄥ叜鍦版澘婀栧寳钀ラ攢涓績");
+	    alert("木兮地板湖北营销中心");
 	}
 })
